@@ -1,0 +1,5 @@
+{
+    "prettier.stylelintIntegration": true,
+    "prettier.useTabs": true,
+    "prettier.trailingComma": "all"
+}
