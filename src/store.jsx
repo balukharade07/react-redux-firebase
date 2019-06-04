@@ -44,7 +44,7 @@ const rootReducer = combineReducers({
 //Create initial state
 const initialState = {};
 
-// Cretae Store
+// Create Store
 const store = createStoreWithFirebase(
 	rootReducer,
 	initialState,
@@ -55,7 +55,7 @@ const store = createStoreWithFirebase(
 			? window.__REDUX_DEVTOOLS_EXTENSION__()
 			: f => f,
 
-		// ****Suport All Google Cro Browser****
+		// ****Suport only Google Chrome Browser****
 
 		// window.__REDUX_DEVTOOLS_EXTENSION__ &&
 		// 	window.__REDUX_DEVTOOLS_EXTENSION__(),
