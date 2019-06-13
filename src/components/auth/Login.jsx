@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../../App.css';
 // import { compose } from 'redux';
 // import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
@@ -27,7 +28,7 @@ class Login extends Component {
 				email,
 				password,
 			})
-			.catch(err => alert('invalid login'));
+			.catch(err => alert(err));
 
 		this.setState({
 			email: '',
@@ -38,12 +39,15 @@ class Login extends Component {
 	render() {
 		const { email, password } = this.state;
 		return (
-			<div className="row">
-				<div className="col-md-7 mx-auto ">
-					<div className="card">
+			<div className="row center-login-box ">
+				<div className="col-md-7 mx-auto shadow-lg">
+					<div className=" ">
 						<div className="cart-body">
-							<h1 className="text-center pb-4 pt-3">
-								<span className="text-primary">Login</span>
+							<h1 className="text-center pb-4 pt-3 ">
+								<span className="text-primary">
+									<span className="glyphicon glyphicon-lock" />
+									Login
+								</span>
 							</h1>
 							<form className="p-3" onSubmit={this.onSubmit.bind(this)}>
 								<div className="form-group">
