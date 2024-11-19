@@ -6,7 +6,7 @@
 		"@hapi/joi": "^15.0.3",
 		"classnames": "^2.2.6",
 		"create-react-class": "^15.6.3",
-		"firebase": "^6.0.4",
+		"firebase": "^10.9.0",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
 		"react-redux": "^5.1.1",
